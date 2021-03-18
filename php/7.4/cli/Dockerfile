@@ -1,6 +1,4 @@
-ARG UBUNTU_VERSION
-
-FROM ubuntu:${UBUNTU_VERSION}
+FROM ubuntu:20.10
 
 RUN apt-get update \
     && ln -fs /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
